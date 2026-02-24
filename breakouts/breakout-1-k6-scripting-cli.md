@@ -215,7 +215,7 @@ Inside the `Performance Testing` navigation menu, go to the `Settings` page. The
 Copy this token to the clipboard. To authenticate, we'll go back to the terminal and pass the token into the following command:
 
 ```
-k6 login cloud --token <token>
+k6 cloud login --token <token> --stack <slug>
 ```
 
 You should now be authenticated to the Cloud!
@@ -223,7 +223,7 @@ You should now be authenticated to the Cloud!
 Now, instead of running the test with `k6 run`, we'll use the `cloud` command:
 
 ```
-k6 cloud script.js
+k6 cloud run script.js
 ```
 
 Lets run it and see what happens!
